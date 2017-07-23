@@ -1,0 +1,273 @@
+body{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+}
+.page{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.tabBar{
+    margin-top: 23%;
+    padding-right: 0;
+}
+.chrome-tab a,
+.chrome-tab a:hover{
+    text-decoration: none;
+    color: #808080;
+    font-size: 12px;
+}
+.chrome-tab.chrome-tab-active a:hover{
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 12px;
+}
+.nav-tabs li a,
+.nav-tabs li a:hover{
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+.nav-tabs li a:hover{
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e0e0e0), color-stop(100%, #d0d0d0));
+    background-image: -webkit-linear-gradient(top, #e0e0e0, #d0d0d0);
+    background-image: -moz-linear-gradient(top, #e0e0e0, #d0d0d0);
+    background-image: -o-linear-gradient(top, #e0e0e0, #d0d0d0);
+    background-image: linear-gradient(top, #e0e0e0, #d0d0d0);
+}
+.main{
+    height: 0;
+    width: 100%;
+    clear: both;
+    transition: height 1s;
+}
+
+.main.active{
+    height: 300px;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .main.active{
+        height: 400px;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .main.active{
+        height: 400px;
+    }
+}
+
+.main div.tab{
+    background-color: #eeeeee;
+    box-shadow: -2px -4px 5px #BEBEBE;
+    float: right;
+    clear: both;
+    display: none;
+}
+
+.main .chat{
+    width: 60%;
+    height: 100%;
+}
+
+.main .mailUs{
+    width: 45%;
+    max-height: 135%;
+}
+
+.main .faq{
+    width: 100%;
+    height: 100%;
+}
+.main.faq{
+    display: block;
+}
+.nav-tabs li a{
+    margin: 0;
+}
+
+.nav-tabs li{
+    border-left: 10px transparent;
+    border-image: url("../svg/tab-left.svg");
+}
+
+.tabBar-toggle{
+    width: 50px;
+    height: 25px;
+    background-color: #555555;
+    color: white;
+    padding-left: 10px;
+    margin-left: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cssmasks .chrome-tabs .chrome-tab .chrome-tab-title{
+    color: #808080;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+.main .mailUs .content{
+    padding: 5%;
+}
+
+.main .mailUs .content .form-control{
+    font-size: 13px;
+}
+
+.main .mailUs .content .toEmail{
+    background-color: #d5d5d5;
+}
+
+.main .mailUs .content .toEmail strong{
+    margin-right: 5px;
+}
+
+.main .mailUs .content .attch-icon{
+    transform: rotateZ(90deg);
+    margin-right: 5px;
+}
+
+.main .mailUs .content .send-button{
+    background-color: #45759B;
+    color: #F3FFFF;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.main .mailUs .content .success-msg{
+    font-size: 13px;
+    border-radius: 7px;
+    display: none;
+}
+
+.main .tab.faq .email-section{
+    width: 35%;
+    height: 100%;
+    padding-top: 6%;
+    text-align: center;
+    color: #808080;
+}
+
+.main .tab.faq .faq-section{
+    width: 64%;
+    height: 100%;
+    border-left: 1px solid #d5d5d5;
+    font-family: sans-serif;
+    color: #808080;
+    font-size: 13px;
+}
+
+.main .tab.faq .email-section .heading{
+    font-size: 22px;
+    font-family: sans-serif;
+    color: #4f4f4f;
+}
+
+.main .tab.faq .email-section .message{
+    color: #808080;
+}
+
+.main .tab.faq .email-section div{
+    margin: auto;
+}
+
+.main .tab.faq .email-section .btn{
+    font-size: 13px;
+    color: #808080;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: -1%;
+    background: #eeeeee; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, #ffffff, #eeeeee); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #ffffff, #eeeeee); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #ffffff, #eeeeee); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top, #ffffff, #eeeeeee); /* Standard syntax */
+}
+
+.main .tab.faq .faq-section #search label{
+    position: relative;
+    left: 13px;
+    top: 32px;
+} 
+
+.main .tab.faq .faq-section #search #filter-input{
+    padding-left: 30px;
+    border-radius: 23px;
+}
+
+.main .tab.faq .faq-section .faq-widgets{
+    margin-top: 35px;
+}
+.main .tab.faq .faq-section .faq-widgets .box{
+    padding-top: 15px;
+    height: 100px;
+    text-align: center;
+    color: #45759B;
+    max-width: 200px;
+    margin: 0 25px;
+}
+.main .tab.faq .faq-section .faq-widgets .box:hover{
+    background-color: #ffffff;
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main .tab.faq .faq-section .faq-widgets .box i.circle{
+    position: relative;
+    left: 45px;
+    top: 8px;
+}
+.main .tab.faq .faq-section .faq-widgets .box .outerCircle{
+    border: 1px solid #45759B;
+    border-radius: 60%;
+    width: 40px;
+    height: 45%;
+    margin-left: 40%;
+    padding-top: 5px;
+}
+
+.main .tab.faq .faq-section .faq-widgets .box .pin-lg{
+    font-size: 23px;
+}
+
+.main .tab.faq .faq-section .faq-widgets .box .user-circle{
+    border: 1px solid #45759B;
+    width: 40px;
+    height: 45%;
+    margin-left: 40%;
+    padding-top: 5px;
+}
+
+.main .tab.faq .faq-section .faq-widgets .box .user-doc{
+    transform: rotateY(180deg);
+    position: relative;
+    left: 5px;
+}
+
+.main .tab.faq .faq-section .faq-widgets .box .user-icon{
+    position: relative;
+    right: 20px;
+}
+
+.main .chat .chat-container{
+    margin-top: 20px;
+}
+
+.main .chat .chat-container .chat-window{
+    height: 130px;
+    border-radius: 10px;
+    background: #dfdfdf;
+    overflow-y: auto;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.main .chat .chat-container .chat-window .you{
+    color: red;
+}
+
+.main .chat .chat-container .chat-window .wait-msg{
+    color: #7c7c7c;
+}
